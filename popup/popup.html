@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo">
+        <img src="../assets/icons/logo.svg" class="shield-icon" width="18" height="18" alt="Logo">
+        <h1>WebRTC 隐私保护</h1>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="main-control">
+        <div class="control-label">
+          <img src="../assets/icons/setting.svg" class="control-icon" width="16" height="16" alt="Settings">
+          WebRTC 保护状态
+        </div>
+        <label class="switch" title="点击切换 WebRTC 状态">
+          <input type="checkbox" id="protectionToggle">
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="status-panel">
+        <div class="status-title">
+          <span id="status-text">WebRTC 功能已开启</span>
+        </div>
+        <div class="status-details">
+          <div class="status-item">
+            <img src="../assets/icons/warning.svg" class="status-icon" id="status-icon" width="14" height="14" alt="Warning">
+            <span id="status-desc">您的IP地址可能会泄漏</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <a href="https://webrtc-detect.qczone.io/" target="_blank" class="text-link">
+          <img src="../assets/icons/check.svg" class="link-icon" width="14" height="14" alt="Check">
+          检查 IP 泄露
+        </a>
+        <a href="https://github.com/qczone/webrtc-privacy-shield" class="text-link" title="查看源代码">
+          <img src="../assets/icons/github.svg" class="link-icon" width="14" height="14" alt="GitHub">
+          GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html> 
